@@ -19,7 +19,7 @@ jobs:
         go-version: 1.19
 
     - name: Build
-      run: CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -ldflags="-s -w" -trimpath -race main.go
+      run: CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -ldflags="-s -w" -trimpath main.go
       
     - name: Delete-tag-and-release
       uses: dev-drprasad/delete-tag-and-release@v1.0
