@@ -3,7 +3,7 @@ package Plugins
 import (
 	"errors"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"golang.org/x/crypto/ssh"
 	"io/ioutil"
 	"net"

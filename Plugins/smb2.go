@@ -2,7 +2,7 @@ package Plugins
 
 import (
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"net"
 	"os"
 	"strings"

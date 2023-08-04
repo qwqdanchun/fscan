@@ -3,7 +3,7 @@ package Plugins
 import (
 	"errors"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"github.com/tomatome/grdp/core"
 	"github.com/tomatome/grdp/glog"
 	"github.com/tomatome/grdp/protocol/nla"

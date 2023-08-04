@@ -5,6 +5,8 @@ import (
 	"runtime"
 	"runtime/debug"
 	"time"
+	"os"
+	"strings"
 )
 
 func init() {
@@ -22,14 +24,7 @@ func GC() {
 }
 
 func Banner() {
-	banner := `
-   ___                              _    
-  / _ \     ___  ___ _ __ __ _  ___| | __ 
- / /_\/____/ __|/ __| '__/ _` + "`" + ` |/ __| |/ /
-/ /_\\_____\__ \ (__| | | (_| | (__|   <    
-\____/     |___/\___|_|  \__,_|\___|_|\_\   
-                     fscan version: ` + version + `
-`
+	banner := `version: ` + version 
 	print(banner)
 }
 
@@ -81,5 +76,10 @@ func Flag(Info *HostInfo) {
 	flag.StringVar(&SC, "sc", "", "ms17 shellcode,as -sc add")
 	flag.BoolVar(&IsWmi, "wmi", false, "start wmi")
 	flag.StringVar(&Hash, "hash", "", "hash")
-	flag.Parse()
+	if(len(os.Args)>2&&strings.Contains(os.Args[1],"lua")){
+		flag.CommandLine.Parse(os.Args[2:])
+	}else
+	{
+		flag.Parse()
+	}
 }

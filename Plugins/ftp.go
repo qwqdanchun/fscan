@@ -3,7 +3,7 @@ package Plugins
 import (
 	"fmt"
 	"github.com/jlaffaye/ftp"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"strings"
 	"time"
 )

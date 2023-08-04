@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"io"
 	"io/ioutil"
 	"net"

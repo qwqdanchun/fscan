@@ -6,7 +6,7 @@ import (
 	"embed"
 	"errors"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"golang.org/x/net/proxy"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"

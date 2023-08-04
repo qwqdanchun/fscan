@@ -3,7 +3,7 @@ package Plugins
 import (
 	"bytes"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"golang.org/x/net/icmp"
 	"net"
 	"os/exec"

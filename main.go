@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/shadow1ng/fscan/Plugins"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/Plugins"
+	"example.com/fxscan/common"
 	"time"
 )
 
@@ -14,5 +14,5 @@ func main() {
 	common.Parse(&Info)
 	Plugins.Scan(Info)
 	t := time.Now().Sub(start)
-	fmt.Printf("[*] 扫描结束,耗时: %s\n", t)
+	fmt.Printf("[*] 扫描已结束,耗时: %s\n", t)
 }

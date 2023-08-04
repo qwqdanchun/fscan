@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/lib/pq"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"strings"
 	"time"
 )

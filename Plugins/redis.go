@@ -3,7 +3,7 @@ package Plugins
 import (
 	"bufio"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"net"
 	"os"
 	"strings"

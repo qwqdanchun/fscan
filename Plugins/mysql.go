@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	"strings"
 	"time"
 )

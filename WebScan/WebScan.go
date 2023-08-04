@@ -3,8 +3,8 @@ package WebScan
 import (
 	"embed"
 	"fmt"
-	"github.com/shadow1ng/fscan/WebScan/lib"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/WebScan/lib"
+	"example.com/fxscan/common"
 	"net/http"
 	"os"
 	"path/filepath"

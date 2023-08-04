@@ -2,8 +2,8 @@ package Plugins
 
 import (
 	"fmt"
-	"github.com/shadow1ng/fscan/WebScan/lib"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/WebScan/lib"
+	"example.com/fxscan/common"
 	"reflect"
 	"strconv"
 	"strings"

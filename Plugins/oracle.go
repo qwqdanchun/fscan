@@ -3,7 +3,7 @@ package Plugins
 import (
 	"database/sql"
 	"fmt"
-	"github.com/shadow1ng/fscan/common"
+	"example.com/fxscan/common"
 	_ "github.com/sijms/go-ora/v2"
 	"strings"
 	"time"
