@@ -2,7 +2,7 @@ package Plugins
 
 import (
 	"fmt"
-	"example.com/fxscan/WebScan/lib"
+	"example.com/fxscan/Web_Scan/lib"
 	"example.com/fxscan/common"
 	"reflect"
 	"strconv"

@@ -13,29 +13,29 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"example.com/fxscan/WebScan"
-	"example.com/fxscan/WebScan/lib"
+	"example.com/fxscan/Web_Scan"
+	"example.com/fxscan/Web_Scan/lib"
 	"example.com/fxscan/common"
 	"golang.org/x/text/encoding/simplifiedchinese"
 )
 
 func WebTitle(info *common.HostInfo) error {
 	if common.Scantype == "webpoc" {
-		WebScan.WebScan(info)
+		Web_Scan.Web_Scan(info)
 		return nil
 	}
 	err, CheckData := GOWebTitle(info)
-	info.Infostr = WebScan.InfoCheck(info.Url, &CheckData)
+	info.Infostr = Web_Scan.InfoCheck(info.Url, &CheckData)
 
 	if common.IsWebCan == false && err == nil {
-		WebScan.WebScan(info)
+		Web_Scan.Web_Scan(info)
 	} else {
 		errlog := fmt.Sprintf("[-] webtitle %v %v", info.Url, err)
 		common.LogError(errlog)
 	}
 	return err
 }
-func GOWebTitle(info *common.HostInfo) (err error, CheckData []WebScan.CheckDatas) {
+func GOWebTitle(info *common.HostInfo) (err error, CheckData []Web_Scan.CheckDatas) {
 	if info.Url == "" {
 		switch info.Ports {
 		case "80":
@@ -89,7 +89,7 @@ func GOWebTitle(info *common.HostInfo) (err error, CheckData []WebScan.CheckData
 	return
 }
 
-func geturl(info *common.HostInfo, flag int, CheckData []WebScan.CheckDatas) (error, string, []WebScan.CheckDatas) {
+func geturl(info *common.HostInfo, flag int, CheckData []Web_Scan.CheckDatas) (error, string, []Web_Scan.CheckDatas) {
 	//flag 1 first try
 	//flag 2 /favicon.ico
 	//flag 3 302
@@ -141,7 +141,7 @@ func geturl(info *common.HostInfo, flag int, CheckData []WebScan.CheckDatas) (er
 	if !utf8.Valid(body) {
 		body, _ = simplifiedchinese.GBK.NewDecoder().Bytes(body)
 	}
-	CheckData = append(CheckData, WebScan.CheckDatas{Body: body, Headers: fmt.Sprintf("%s", resp.Header)})
+	CheckData = append(CheckData, Web_Scan.CheckDatas{Body: body, Headers: fmt.Sprintf("%s", resp.Header)})
 	var reurl string
 	if flag != 2 {
 		title = gettitle(body)

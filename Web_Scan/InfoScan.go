@@ -1,9 +1,9 @@
-package WebScan
+package Web_Scan
 
 import (
 	"crypto/md5"
 	"fmt"
-	"example.com/fxscan/WebScan/info"
+	"example.com/fxscan/Web_Scan/info"
 	"example.com/fxscan/common"
 	"regexp"
 )

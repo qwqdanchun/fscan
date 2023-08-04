@@ -253,7 +253,7 @@ Modify the error prompt. If there is no new progress in - debug within 10 second
 [+] 2020/12/6 Optimize the icmp module and add the -domain parameter (for the smb blasting module, applicable to domain users)   
 [+] 2020/12/03 Optimize the ip segment processing module, icmp, port scanning module. 192.168.1.1-192.168.255.255 is supported.   
 [+] 2020/11/17 The -ping parameter is added to replace icmp packets with ping in the survival detection module.   
-[+] 2020/11/17 WebScan module and shiro simple recognition are added. Skip certificate authentication during https access. Separate the timeout of the service module and the web module, and add the -wt parameter (WebTimeout).    
+[+] 2020/11/17 Web_Scan module and shiro simple recognition are added. Skip certificate authentication during https access. Separate the timeout of the service module and the web module, and add the -wt parameter (WebTimeout).    
 [+] 2020/11/16 Optimize the icmp module and add the -it parameter (IcmpThreads). The default value is 11000, which is suitable for scanning section B.    
 [+] 2020/11/15 Support importt ip from file, -hf ip.txt, and process de duplication ips.  
 
